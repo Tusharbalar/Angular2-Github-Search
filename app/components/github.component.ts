@@ -14,16 +14,7 @@ export class GithubComponent {
   username: any;
 
   constructor(private _githubService : GithubService) {
-
-    this._githubService.getUser().subscribe(user => {
-      this.user = user;
-    });
-
-    this._githubService.getRepos().subscribe(repos => {
-      this.repos = repos;
-      console.log(this.repos);
-    });
-
+    this.user = false;
   }
 
   search() {
