@@ -4,8 +4,9 @@ import { GithubService } from './services/github.service';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 @Component({
+    moduleId: module.id,
     selector: 'my-app',
-    template: '<github></github>',
+    templateUrl: 'app.component.html',
     directives: [GithubComponent],
     providers: [HTTP_PROVIDERS, GithubService]
 })
